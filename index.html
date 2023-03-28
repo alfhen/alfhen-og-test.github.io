@@ -10,12 +10,11 @@
 
 <script>
 
-    // Define a function to create the Open Graph meta tags
-    function createMetaTags() {
+
         // Define your page title, description, and image URL
-        const pageTitle = "Your Page Title";
-        const pageDescription = "A brief description of your page";
-        const pageImage = "https://source.unsplash.com/random/800x600";
+    const pageTitle = "Your Page Title";
+    const pageDescription = "A brief description of your page";
+    const pageImage = "https://source.unsplash.com/random/800x600";
 
         // Create the Open Graph meta tags
         const metaTags = `
@@ -23,14 +22,11 @@
     <meta property="og:description" content="${pageDescription}">
     <meta property="og:image" content="${pageImage}">
     <meta property="og:type" content="website">
-  `;
+    `
 
-        // Append the meta tags to the head element
-        document.head.insertAdjacentHTML("beforeend", metaTags);
-    }
 
-    // Add a window.onload event handler to call the createMetaTags function
-    window.onload = createMetaTags;
+    // Append the meta tags to the head element
+    document.head.insertAdjacentHTML("beforeend", metaTags);
 
 
 </script>
